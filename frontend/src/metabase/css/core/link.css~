@@ -1,6 +1,6 @@
 :root {
   /*--default-link-color: #4A90E2;*/
-  --default-link-color: #45B794;
+  --default-linke-color: #45B794;
 }
 
 .no-decoration {

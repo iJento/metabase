@@ -36,7 +36,7 @@
 
 @media screen and (--breakpoint-min-md) {
     .Logo .Icon {
-        width: 100px;
-        height: 50px;
+        width: 66px;
+        height: 85px;
     }
 }

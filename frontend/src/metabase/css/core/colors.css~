@@ -17,8 +17,7 @@
   --alt-color: #F5F7F9;
   --alt-bg-color: #F4F6F8;
 
-  /*--success-color: #9CC177;*/
-  --success-color: #45B794;
+  --success-color: #9CC177;
   --headsup-color: #F5A623;
   --warning-color: #E35050;
 

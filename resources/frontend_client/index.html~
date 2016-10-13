@@ -7,12 +7,12 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        <title>Fospha|Metabase</title>
+        <title>Fopsha|Metabase</title>
 
         <script type="text/javascript">
          window.MetabaseBootstrap = {{{bootstrap_json}}};
         </script>
-    </head>
+    <link href="/app/dist/styles.bundle.css?729b10fcf9cc2fa4b7e31dffb2a70b41" rel="stylesheet"><link href="/app/dist/app.bundle.css?5f542c7c754b998a723a7f10933e4f4c" rel="stylesheet"><script type="text/javascript" src="/app/dist/vendor.bundle.js?30f486fc48ceedcbdfe7"></script><script type="text/javascript" src="/app/dist/styles.bundle.js?30f486fc48ceedcbdfe7"></script><script type="text/javascript" src="/app/dist/app.bundle.js?30f486fc48ceedcbdfe7"></script></head>
 
     <body ng-controller="Metabase">
         <div class="Nav" ng-controller="Nav" mb-react-component="Navbar"></div>

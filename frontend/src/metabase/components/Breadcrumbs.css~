@@ -4,8 +4,7 @@
     --breadcrumb-page-color: #636060;
     --breadcrumb-divider-spacing: 0.75em;
     /* taken from Sidebar.css, should probably factor them out into variables */
-    /* --sidebar-breadcrumbs-color: #9CAEBE; */
-    --sidebar-breadcrumbs-color: #e6efec;
+    --sidebar-breadcrumbs-color: #9CAEBE;
     /* --sidebar-breadcrumb-page-color: #2D86D4; */
     --sidebar-breadcrumb-page-color: var(--dark-shamrock);
 }

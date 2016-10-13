@@ -35,8 +35,7 @@
 }
 
 .EditHeader {
-    /* background-color: #6CAFED; */
-    background-color: #45B794;
+    background-color: #6CAFED;
 }
 
 .EditHeader-title {

@@ -62,10 +62,8 @@
 }
 
 .SetupStep.SetupStep--completed .SetupStep-indicator {
-    /* border-color: #9CC177;
-    background-color: #C8E1B0; */
-    border-color: #45B794;
-    background-color: #45B794;
+    border-color: #9CC177;
+    background-color: #C8E1B0;
 }
 
 .SetupStep.SetupStep--completed .SetupStep-check {

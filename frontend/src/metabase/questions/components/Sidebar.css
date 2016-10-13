@@ -55,8 +55,10 @@
 :local(.item):hover,
 :local(.item):hover :local(.icon),
 :local(.sectionTitle):hover {
-    background-color: #E3F0F9;
-    color: #2D86D4;
+    /* background-color: #E3F0F9;
+    color: #2D86D4; */
+    background-color: #e6efec;
+    color: var(--dark-shamrock);
 }
 
 :local(.divider) {
@@ -67,7 +69,8 @@
 
 :local(.name) {
     composes: ml2 text-bold from "style";
-    color: #9CAEBE;
+    /* color: #9CAEBE; */
+    color: #e6efec;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow-x: hidden;
@@ -75,7 +78,8 @@
 
 :local(.item):hover :local(.name),
 :local(.item.selected) :local(.name) {
-    color: #2D86D4;
+    /* color: #2D86D4; */
+    color: var(--dark-shamrock);
 }
 
 :local(.icon) {
