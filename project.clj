@@ -69,6 +69,7 @@
                  [io.crate/crate-client "0.55.2"]                     ; Crate Java client (used by Crate JDBC)
                  [prismatic/schema "1.1.3"]                           ; Data schema declaration and validation library
                  [ring/ring-jetty-adapter "1.5.0"]                    ; Ring adapter using Jetty webserver (used to run a Ring server for unit tests)
+                 [org.eclipse.jetty/jetty-jmx "9.2.10.v20150310"]     ; Ring adapter using Jetty webserver (used to run a Ring server for unit tests)
                  [ring/ring-json "0.4.0"]                             ; Ring middleware for reading/writing JSON automatically
                  [stencil "0.5.0"]                                    ; Mustache templates for Clojure
                  [swiss-arrows "1.0.0"]]                              ; 'Magic wand' macro -<>, etc.
@@ -79,7 +80,12 @@
   :main ^:skip-aot metabase.core
   :manifest {"Liquibase-Package" "liquibase.change,liquibase.changelog,liquibase.database,liquibase.parser,liquibase.precondition,liquibase.datatype,liquibase.serializer,liquibase.sqlgenerator,liquibase.executor,liquibase.snapshot,liquibase.logging,liquibase.diff,liquibase.structure,liquibase.structurecompare,liquibase.lockservice,liquibase.sdk,liquibase.ext"}
   :target-path "target/%s"
-  :jvm-opts ["-Djava.awt.headless=true"]                              ; prevent Java icon from randomly popping up in dock when running `lein ring server`
+  :jvm-opts ["-Djava.awt.headless=true"
+             "-Dcom.sun.management.jmxremote"
+             "-Dcom.sun.management.jmxremote.ssl=false"
+             "-Dcom.sun.management.jmxremote.authenticate=false"
+             "-Dcom.sun.management.jmxremote.host=127.0.0.1"
+             "-Dcom.sun.management.jmxremote.port=8001"]              ; prevent Java icon from randomly popping up in dock when running `lein ring server`
   :javac-options ["-target" "1.7", "-source" "1.7"]
   :uberjar-name "metabase.jar"
   :ring {:handler metabase.core/app
